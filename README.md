@@ -9,3 +9,7 @@ After cloning run
 `npm install`
 
 `npm start`
+
+
+## Demo  
+ [Live Demo](https://raviloop-pomodoro-clock.herokuapp.com/)
