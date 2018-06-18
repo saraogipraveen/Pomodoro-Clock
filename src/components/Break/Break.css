@@ -1,0 +1,10 @@
+.Break{
+    width: 50%;
+     /* border-radius: 10px/30px; */
+      /* border: 1px solid #BADA55; */
+    display: inline-block;
+}
+
+.break-data button,p{
+    display: inline-block;
+}

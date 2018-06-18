@@ -48,7 +48,7 @@ class App extends Component {
 
   reset = () => {
     this.refs.audio_tag.pause();
-    this.refs.audio_tag.currentTime=0
+    this.refs.audio_tag.currentTime = 0
     clearInterval(timer);
     timer = null;
     this.setState(initialState)
@@ -101,15 +101,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Pomodoro Clock</h1>
-        <Break
-          incrementBreak={this.incrementBreak}
-          decrementBreak={this.decrementBreak}
-          breakLength={this.state.breakLength} />
-        <Session
-          incrementSession={this.incrementSession}
-          decrementSession={this.decrementSession}
-          sessionLength={this.state.sessionLength} />
+        <h1 style={{ color: '#2F4858' }}>Pomodoro Clock</h1>
         <Timer
           timeLeft={this.state.timeLeft}
           timerLabel={this.state.timerLabel}
@@ -118,12 +110,20 @@ class App extends Component {
           startstop={this.startstop}
           reset={this.reset}
         />
+        <Break
+          incrementBreak={this.incrementBreak}
+          decrementBreak={this.decrementBreak}
+          breakLength={this.state.breakLength} />
+        <Session
+          incrementSession={this.incrementSession}
+          decrementSession={this.decrementSession}
+          sessionLength={this.state.sessionLength} />
 
-        <audio id="beep" ref="audio_tag" src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/arrow.mp3" style={{display:'none'}}  />
-          <p>Designed and Coded by Praveen Saraogi </p>
+        <audio id="beep" ref="audio_tag" src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/arrow.mp3" style={{ display: 'none' }} />
+        <p style={{ color: '#2F4858' }}>Designed and Coded by Praveen Saraogi </p>
       </div>
-        );
-      }
-    }
-    
-    export default App;
+    );
+  }
+}
+
+export default App;

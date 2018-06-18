@@ -1,9 +1,10 @@
 import React from 'react';
+import './Session.css';
 
 const Session = (props) => {
 
     return (
-        <div>
+        <div className="Session">
             <h3 id="session-label">Session Length </h3>
             <div>
                 <button id="session-decrement" onClick={props.decrementSession}>decrement</button>
