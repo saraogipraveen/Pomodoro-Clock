@@ -2,13 +2,13 @@
     color: #55DDE0;
     background-color:#ED474A;
     border:8px solid #2B9EB3;    
-    height:250px;
+    height:210px;
     border-radius:50%;
     -moz-border-radius:50%;
     -webkit-border-radius:50%;
-    width:250px;
+    width:210px;
     margin: 0 auto;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .Timer h3,p{

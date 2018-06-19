@@ -107,6 +107,7 @@ class App extends Component {
           timerLabel={this.state.timerLabel}
         />
         <Controls
+          timerRunning={this.state.timerRunning}
           startstop={this.startstop}
           reset={this.reset}
         />

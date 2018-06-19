@@ -1,16 +1,18 @@
 import React from 'react';
 import './Session.css';
+import * as FontAwesome from 'react-icons/lib/fa';
+
 
 const Session = (props) => {
+
+
 
     return (
         <div className="Session">
             <h3 id="session-label">Session Length </h3>
-            <div>
-                <button id="session-decrement" onClick={props.decrementSession}>decrement</button>
-                <p id="session-length">{props.sessionLength}</p>
-                <button id="session-increment" onClick={props.incrementSession}>increment</button>
-            </div>
+            <p id="session-decrement" onClick={props.decrementSession}><FontAwesome.FaCaretDown /></p>
+            <p id="session-length">{props.sessionLength}</p>
+            <p id="session-increment" onClick={props.incrementSession}><FontAwesome.FaCaretUp /></p>
         </div>
     );
 

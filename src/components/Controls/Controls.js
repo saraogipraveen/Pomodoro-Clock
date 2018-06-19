@@ -1,11 +1,19 @@
 import React from 'react';
+import * as FontAwesome from 'react-icons/lib/fa';
 
 const Controls = (props) => {
 
+    const iconCss = {
+        fontSize : '40px',
+        padding : '10px',
+        display:'inline-block'
+    }
+
     return (
         <div>
-            <button onClick={props.startstop} id="start_stop">startstop</button>
-            <button onClick={props.reset} id="reset">reset</button>
+            <p style={iconCss} onClick={props.startstop} id="start_stop">
+                {props.timerRunning ? <FontAwesome.FaPause /> : <FontAwesome.FaPlay />}</p>
+            <p style={iconCss} onClick={props.reset} id="reset"><FontAwesome.FaRetweet /></p>
         </div>
     );
 

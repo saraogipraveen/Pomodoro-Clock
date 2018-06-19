@@ -3,3 +3,13 @@
     width: 50%;
 
 }
+.Session h3{
+    position: relative;
+}
+.Session p {
+        position: relative;
+    bottom: 45px;
+    font-size: 30px;
+    padding: 10px;
+    display: inline-block;
+}

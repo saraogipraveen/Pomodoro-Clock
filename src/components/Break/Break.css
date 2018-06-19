@@ -1,10 +1,16 @@
 .Break{
     width: 50%;
-     /* border-radius: 10px/30px; */
-      /* border: 1px solid #BADA55; */
     display: inline-block;
 }
 
-.break-data button,p{
+
+.Break h3{
+    position: relative;
+}
+.Break p{
+    position: relative;
+    bottom: 45px;
+    font-size: 30px;
+    padding: 10px;
     display: inline-block;
 }
